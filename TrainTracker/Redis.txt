@@ -1,0 +1,22 @@
+// Les utilisateurs dans la base de données 0
+hmset users user1 user1 user2 user2 user3 user3 user4 user4
+hmset admins admin admin
+hmset managers manager1 manager1
+
+
+// Les trains dans la base de données 1
+
+select 1
+
+hmset graph1 01/08 6 02/08 8 03/08 9 04/08 7 05/08 10 06/08 7
+hmset graph2 01/08 15 02/08 16 03/08 14 04/08 13 05/08 16 06/08 14
+
+sadd trains train1 train2 train3 train4 train5 train6 train7 train8 train9 train10
+
+hmset train1 name "Train 1" departure Marrakech destination Rabat type "Type A"
+hmset train2 name "Train 2" departure Marrakech destination Fes type "Type C"
+hmset train3 name "Train 3" departure Tanger destination Oujda type "Type B"
+hmset train4 name "Train 4" departure Rabat destination Fes type "Type C"
+hmset train5 name "Train 5" departure Dakhla destination Marrakech type "Type A"
+hmset train6 name "Train 6" departure Marrakech destination Rabat type "Type A"
+
